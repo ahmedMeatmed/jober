@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Form extends Model
+{
+    use HasFactory;
+    protected $table = 'forms';
+    
+    protected $fillable =[
+        'name',
+        'email',
+        'phone',
+        'file_path',
+        'post_id',
+        'employer_id',
+        'candidate_id',
+
+    ];
+
+}
